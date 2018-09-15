@@ -9,4 +9,11 @@ print("Hello {}".format(name))
 secret_number = random.randrange(1, 101)
 print(secret_number)
 
-guess = int(input("Guess a number between 1 and 100, inclusive: "))
+guess = 0
+num_guesses= 0
+
+while(guess != secret_number):
+	guess = int(input("Guess a number between 1 and 100, inclusive: "))
+	num_guesses += 1
+	if(guess == secret_number):
+		break
