@@ -14,7 +14,6 @@ num_guesses = 0
 
 while(guess != secret_number):
 
-	#while isinstance(guess, int) == False:
 	
 	while True:
 		guess = input("Guess a number between 1 and 100, inclusive: ")
