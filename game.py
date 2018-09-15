@@ -17,6 +17,7 @@ while(guess != secret_number):
 	num_guesses += 1
 	
 	if (guess == secret_number):
+		print("Congrats you guess the secret number! And you only needed {} to do so!".format(num_guesses))
 		break
 
 	elif guess > secret_number:
@@ -24,3 +25,4 @@ while(guess != secret_number):
 
 	else:
 		print("Your guess is too low! Try again!")  
+
